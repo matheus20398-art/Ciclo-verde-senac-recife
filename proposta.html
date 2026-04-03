@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propostas - Ciclo Verde</title>
+  <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><img src="imagem/logo.png" alt="Logo Ciclo Verde"></div>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="quemsomos.html">Quem Somos</a>
+      <a href="produto.html">Produtos</a>
+      <a href="rastreio.html">Rastreio</a>
+      <a href="proposta.html" class="ativo">Propostas</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container-propostas">
+    <h1>Envio de Propostas de Sementes</h1>
+    <form id="formProposta" class="form-proposta">
+      <label>Tipo de Semente:</label>
+      <input type="text" required>
+
+      <label>Quantidade (kg):</label>
+      <input type="number" required>
+
+      <label>Estado:</label>
+      <select required>
+        <option value="">Selecione</option>
+        <option>RN</option>
+        <option>PB</option>
+        <option>BA</option>
+        <option>PE</option>
+      </select>
+
+      <button type="submit" class="botao-proposta">Enviar Proposta</button>
+    </form>
+
+    <p id="mensagem"></p>
+    <button id="logout" class="botao-proposta">Sair</button>
+
+    <section class="info">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Gestão Inteligente de Sementes</li>
+        <li>Blockchain e QR Code</li>
+        <li>Monitoramento em Tempo Real</li>
+        <li>Análise Gráfica de Pedidos</li>
+      </ul>
+    </section>
+    
+  </main>
+
+  <footer>
+     <p>&copy; 2025 Ciclo-VerdeGestão Sustentável de Sementes </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
